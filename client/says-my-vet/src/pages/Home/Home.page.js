@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div className="home-page">
       <div className="home-sec1">
-        <h3>High Quality Care For Pets You'll Love</h3>
+        <h3 id='descr'>High Quality Care For Pets You'll Love</h3>
         <button className="info-btn">LEARN MORE</button>
       </div>
       <div className="home-sec2">
