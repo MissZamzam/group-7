@@ -1,0 +1,54 @@
+/* *{
+    margin: 0;
+    padding: o;
+    box-sizing: border-box;
+} */
+.home-page{
+    display: block;
+    background-color: #808080;
+    height: 100vh;
+}
+.home-sec1{
+    display: block;
+    text-align: center;
+    height: 30vh;
+}
+.info-btn{
+    background-color: #00be51;
+    border: none;
+    border-radius: .5em;
+    height: 3em;
+}
+.home-sec2{
+    height: 50vh;
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200px;
+    gap: 20px;
+    position: relative;
+}
+.card1{
+    background-color: #00be51;
+    text-align: center;
+    height: 90%;
+    width: 90%;
+    margin: 0 1em ;
+    font-size: 15px;
+}
+.card2{
+    background-color: #ffff;
+    text-align: center;
+    height: 90%;
+    width: 90%;
+    margin: 0 1em 1em 0 ;
+    font-size: 15px;
+}
+.card3{
+    background-color: #ffff;
+    text-align: center;
+    height: 90%;
+    width: 90%;
+    margin: 0 1em 1em 0 ;
+    font-size: 15px;
+}

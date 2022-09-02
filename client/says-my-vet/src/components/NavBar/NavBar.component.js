@@ -4,8 +4,8 @@ import './NavBar.styles.css'
 const NavBar = () => {
   return (
       <div>
-          <div className="logo">
-            <h1>LOGO</h1>  
+          {/* <div className="logo"> */}
+            {/* <h1>LOGO</h1>  
           </div>
           <ul>
               <li>Home</li>
@@ -13,7 +13,7 @@ const NavBar = () => {
               <li>Register_doctpr</li>
               <li>view-doctors</li>
               <li>Blog/resources</li>
-          </ul>
+          </ul> */}
     </div>
   )
 }
