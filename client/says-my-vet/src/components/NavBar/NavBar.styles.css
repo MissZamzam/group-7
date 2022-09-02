@@ -3,4 +3,48 @@
 }
 .media-contacts{
     display: flex;
+    justify-content: space-around;
+    background-image:radial-gradient(#137bff, #00a1a7,#00be51);
+    gap: 1em;
+}
+.phonecall{
+    display: flex;
+    margin-top: 1em;
+}
+
+.mail{
+    display: flex;
+    margin-top: 1em;}
+
+.media-handles > ul {
+    display: flex;
+    text-decoration: none;
+    float: right;
+}
+.media-handles > ul a li{
+    list-style: none;
+    padding: 0 1em 0 1em;
+    /* margin-right: 2em; */
+}
+.media-handles > ul a li:hover{
+    cursor: pointer;
+}
+/* unvisited link */
+a:link {
+  color: green;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: red;
+}
+
+/* selected link */
+a:active {
+  color: yellow;
 }
