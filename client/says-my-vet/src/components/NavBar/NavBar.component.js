@@ -5,14 +5,14 @@ const NavBar = () => {
   return (
       <div>
           <div className="logo">
-            <h1>LOGO</h1>  
+            <h1>Pets first</h1>  
           </div>
           <ul>
               <li>Home</li>
               <li>About</li>
-              <li>Register_doctpr</li>
-              <li>view-doctors</li>
-              <li>Blog/resources</li>
+              <li>Register_doctor</li>
+              <li>View_doctors</li>
+              <li>Pets data</li>
           </ul>
     </div>
   )
