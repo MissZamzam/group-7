@@ -5,35 +5,45 @@ import { FaEnvelope, FaFacebook, FaFacebookF, FaInstagram, FaLinkedin, FaPhoneAl
 const NavBar = () => {
   return (
     <header className="header-sec">
-      <div className='media-contacts'>
-        <div className='phonecall'>
+      <div className="media-contacts">
+        <div className="phonecall">
           <FaPhoneAlt />: +2547200000
         </div>
-        <div className='mail'>
+        <div className="mail">
           <FaEnvelope />: pets_first_app@site.com
         </div>
-        <div className='media-handles'>
+        <div className="media-handles">
           <ul>
             <a>
-              <li><FaTwitter/></li>
+              <li>
+                <FaTwitter />
+              </li>
             </a>
             <a>
-              <li><FaInstagram/></li>
+              <li>
+                <FaInstagram />
+              </li>
             </a>
             <a>
-              <li><FaFacebook/></li>
+              <li>
+                <FaFacebook />
+              </li>
             </a>
             <a>
-              <li><FaLinkedin/></li>
+              <li>
+                <FaLinkedin />
+              </li>
             </a>
           </ul>
         </div>
       </div>
-      <div>
+      <div className="nav_bar">
         <div className="logo">
-          <h1>Pets First</h1>
+          <h1>
+            Pets <em>First</em>
+          </h1>
         </div>
-        <div>
+        <div className="routes">
           <ul>
             <li>Home</li>
             <li>About</li>
