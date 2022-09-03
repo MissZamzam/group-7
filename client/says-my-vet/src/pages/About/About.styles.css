@@ -1,0 +1,21 @@
+.pets-imgs{
+    height: 10vh;
+    width: 100%;
+    background-color: aqua;
+}
+.pets-imgs > img{
+    height: 90%;
+    width: 15%;
+    
+}
+
+.blog-links{
+    font-style: italic;
+    font-size: 18px;
+}
+.blog-links:hover{
+    color: #00be51;
+    cursor: pointer;
+    text-decoration: underline #137bff;
+
+}

@@ -1,5 +1,6 @@
 import React from 'react'
-
+import "../About/About.styles.css"
+import Image1 from './AboutImages/breed.jpg'
 const About = () => {
     return (
       <section className="about-section">
@@ -12,6 +13,14 @@ const About = () => {
           
         </div>
         <div className="services">
+          <h3>Our services</h3>
+          <div className='pets-imgs'>
+            <img src={Image1}></img>
+            <a className='blog-links'>
+            <h5>Breeds</h5>
+            </a>
+            
+          </div>
           <div></div>
           <div></div>
           <div></div>
