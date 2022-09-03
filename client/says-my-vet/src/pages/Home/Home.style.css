@@ -40,6 +40,7 @@
     grid-auto-rows: 200px;
     gap: 2rem;
     position: relative;
+    /* overflow: auto; */
     /* left: 0;
     right: 0;
     z-index: 3;
