@@ -1,6 +1,11 @@
 import React from 'react'
 import "../About/About.styles.css";
-import Image1 from './AboutImages/breed.jpg'
+import Image1 from "./AboutImages/breed.jpg";
+import Image2 from "./AboutImages/feed.jpg";
+import Image3 from "./AboutImages/disease.png";
+import Image4 from "./AboutImages/welfare.jpg";
+import Image5 from "./AboutImages/funfact.jpg";
+import Image6 from "./AboutImages/Sport.jpg";
 
 const About = () => {
   return (
@@ -18,17 +23,30 @@ const About = () => {
         </div>
         <div className="services">
           <h3>Our Services</h3>
-            <div className='pets-imgs'>
-              <img src={Image1} />
-              <a className="blog-links">
-                Breeds
-              </a>
-            </div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+          <div className="pets-imgs">
+            <img src={Image1} />
+            <a className="blog-links">Breeds</a>
+          </div>
+          <div className="pets-imgs">
+            <img src={Image2} />
+            <a className="blog-links">Breeds</a>
+          </div>
+          <div className="pets-imgs">
+            <img src={Image3} />
+            <a className="blog-links">Breeds</a>
+          </div>
+          <div className="pets-imgs">
+            <img src={Image4} />
+            <a className="blog-links">Breeds</a>
+          </div>
+          <div className="pets-imgs">
+            <img src={Image5} />
+            <a className="blog-links">Breeds</a>
+          </div>
+          <div className="pets-imgs">
+            <img src={Image6} />
+            <a className="blog-links">Breeds</a>
+          </div>
         </div>
       </div>
       <div className="abt-sec2"></div>
