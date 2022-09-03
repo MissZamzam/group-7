@@ -64,6 +64,7 @@ DEPENDENCIES
   rake
   require_all
   rspec
+  sinatra
   sinatra-activerecord
   sqlite3
 
