@@ -52,11 +52,21 @@ const NavBar = () => {
             <li>
               <Link to="/">Home</Link>
             </li>
-            <li>About</li>
-            <li>Register_Doctors</li>
-            <li>View-Doctors</li>
-            <li>Pets Data</li>
-            <li>Blogs</li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+            <li>
+              <Link to="/registerdoc">Register_Doctors</Link>
+            </li>
+            <li>
+              <Link to="/viewdoc">View-Doctors</Link>
+            </li>
+            <li>
+              <Link to="/petsdata">Pets Data</Link>
+            </li>
+            <li>
+              <Link to="/blog">Blogs</Link>
+            </li>
           </ul>
         </div>
       </div>
