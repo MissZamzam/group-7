@@ -37,3 +37,73 @@ body{
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
+form .user-details .input-box{
+    margin-bottom: 15px;
+    margin: 20px 0 12px 0;
+    width: calc(100%/2 - 250px);
+    /* padding: 20px; */
+}
+.user-details .input-box .details{
+    display: block;
+    font-weight: 500;
+    margin: 10px;
+
+}
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    font-size: 16px;
+
+}
+
+.user-details .input-box select{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    font-size: 16px;
+}
+form{
+    margin-top: 40px;
+}
+
+form .button{
+    height: 45px;
+    margin: 45px 0;
+    width: 100%;
+    margin-top: 190px; 
+    margin-right: 80px; 
+    outline: none;
+    margin: 20px;
+}
+form .button input{
+    height: 100%;
+    width: 200px;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(43, 169, 43);
+    color: white;
+}
+
+@media (max-width: 800px){
+    .container{
+        max-width: 100%;
+    }
+    form .user-details .input-box{
+        width: 100%
+    }
+    .container form .user-details{
+        max-height: 1200px;
+    }
+}
