@@ -1,10 +1,7 @@
-<<<<<<< HEAD
+
 
 import React from 'react';
-=======
-import React from 'react';
-// import { IconName } from "react-icons/fa";
->>>>>>> 3579cfc33d15e84a3f16bf49e8e8b565cbf022fc
+
 import NavBar from './components/NavBar/NavBar.component.js'
 import Footer from './components/Footer/Footer.component.js'
 // import pages 

@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import './NavBar.styles.css'
 import { FaEnvelope, FaFacebook, /*FaFacebookF,*/ FaInstagram, FaLinkedin, FaPhoneAlt, FaTwitter } from "react-icons/fa";
 
@@ -45,11 +46,11 @@ const NavBar = () => {
         </div>
         <div className="routes">
           <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Register_Doctors</li>
-            <li>View-Doctors</li>
-            <li>Pets Data</li>
+            <li> <Link to="/home"/>Home</li>
+            <li> <Link to="/about"/>About</li>
+            <li> <Link to="/registerdoc"/>Register_Doctors</li>
+            <li> <Link to="/viewdoc"/>View-Doctors</li>
+            {/* <li> <Link to="/home"/>Pets Data</li> */}
           </ul>
         </div>
       </div>
