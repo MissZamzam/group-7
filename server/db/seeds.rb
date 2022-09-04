@@ -13,5 +13,6 @@ pet2 = Pet.create(name:"Marley")
 puts "Seeding specialization table ....."
 spec1 = Specialization.create(field_of_speciality:"Dentistry", doctor_id: daktari1.id,pet_id: pet1.id)
 spec2 = Specialization.create(field_of_speciality:"Nutrition",doctor_id: daktari2.id,pet_id: pet2.id )
+spec3 = Specialization.create(field_of_speciality:"Dermatology",doctor_id: daktari2.id,pet_id: pet2.id )
 
 puts "Seeding end ....."
