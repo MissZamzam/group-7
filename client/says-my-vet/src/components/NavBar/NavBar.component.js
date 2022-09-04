@@ -6,6 +6,25 @@ import { FaEnvelope, FaFacebook, /*FaFacebookF,*/ FaInstagram, FaLinkedin, FaPho
 
 const NavBar = () => {
   return (
+
+      <div className="nav_bar">
+          <div className="logo">
+            <h1>Pets <em>First</em></h1>  
+          </div>
+          <div className='routes'> <ul>
+              <li>Home</li>
+              <li>About</li>
+              <li>Register_doctor</li>
+              <li>View_doctors</li>
+              <li>Pets data</li>
+          </ul>
+
+          </div>
+         
+          </div>
+    
+  )
+
     <header className="header-sec">
       <div className="media-contacts">
         <div className="phonecall">
@@ -68,13 +87,6 @@ const NavBar = () => {
             <li>
               <Link to="/blog">Blogs</Link>
             </li>
-
-            <li> <Link to="/">Home</Link></li>
-            <li> <Link to="about">About</Link></li>
-            <li> <Link to="registerdoc">Register_Doctors</Link></li>
-            <li> <Link to="viewdoc">View-Doctors</Link></li>
-            <li> <Link to="petsdata">Pets Data</Link></li>
-            {/* <li> <Link to="/home"/>Pets Data</li> */}
           </ul>
         </div>
       </div>
