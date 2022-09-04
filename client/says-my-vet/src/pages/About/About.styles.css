@@ -69,7 +69,9 @@ p{
 }
 .pets-imgs > img:hover{
     cursor: progress;
-    box-shadow: 5px 10px 18px  #00be51
+    box-shadow: 5px 10px 18px  #00be51;
+    transform: translate(20%, 20%);
+    transition: 1s all ease;
 }
 .blog-links{
     font-style: italic;
@@ -80,6 +82,7 @@ p{
     color: #00be51;
     cursor: pointer;
     text-decoration: underline #137bff;
+    font-size: larger;
 }
 .services{
     display: block;
@@ -99,4 +102,10 @@ p{
 }
 p{
     text-align: center;
+}
+p:hover{
+     font-size: larger;
+     overflow: auto;
+    /* transform: translate(-20%, -20%);
+    transition: 2s all ease; */
 }

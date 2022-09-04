@@ -83,6 +83,15 @@
     border-top-right-radius: 1.25em;
     border-bottom-left-radius: 1.25em;
 }
+#submit:hover{
+    cursor: pointer;
+    background-color: #00a1a7;
+    font-style: italic;
+    /* font-size: larger; */
+    transform: translate(-20%, -20%);
+    transition: 2s all ease;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
 .social > ul {
     display: block;
     text-decoration: none;
