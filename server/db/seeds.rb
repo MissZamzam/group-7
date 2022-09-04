@@ -19,3 +19,7 @@ spec2 = Specialization.create(field_of_speciality:"Nutrition",doctor_id: daktari
 spec3 = Specialization.create(field_of_speciality:"Dermatology",doctor_id: daktari2.id,pet_id: pet2.id )
 
 puts "Seeding end ....."
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9d2449b76b33a8ddb1693df88bb5cf82a05d0b9d
