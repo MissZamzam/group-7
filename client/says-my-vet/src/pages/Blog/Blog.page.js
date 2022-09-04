@@ -27,7 +27,11 @@ const BlogPage = () => {
       <a href="https://healthyhomemadedogtreats.com/top-42-dog-food-facts-every-caring-dog-owner-must-know/">42 Dog Food Facts Every Caring Dog Owner Must Know</a>
 
     </div>
-
+    <div className='training'>
+      <h2>Training</h2>
+      <a href='https://www.masterclass.com/articles/dog-training-guide?campaignid=17955457183&adgroupid=140031464379&adid=614946886970&utm_term=&utm_campaign=%5BMC%5C+%7C+Search+%7C+NonBrand+%7C+SEO-Pages_DSA+%7C+ROW+%7C+EN+%7C+tROAS+%7C+EG%7CPP+%7C+BRD+%7C+ROW&utm_source=google&utm_medium=cpc&utm_content=614946886970&hsa_acc=9801000675&hsa_cam=17955457183&hsa_grp=140031464379&hsa_ad=614946886970&hsa_src=s&hsa_tgt=dsa-1720758020155&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gclid=EAIaIQobChMIqdL-_uz6-QIVxMPVCh0yBAH4EAAYASAAEgI6wfD_BwE'>Basic Dog Training Tips</a>
+      <br></br>
+    </div>
   </div>
   )
 }
