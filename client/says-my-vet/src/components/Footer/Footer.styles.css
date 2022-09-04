@@ -12,7 +12,18 @@
 } 
 .sections{
     display: flex;
-    gap: 5em;
+    gap: 3em;
+}
+.footer-image{
+    width: 30vw;
+    height: 50vh;
+    margin: 1em;
+}
+
+.footer-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 55%;
 }
 .form{
     display: block;
@@ -87,4 +98,22 @@
 }
 .social > ul a li:hover{
     cursor: pointer;
+}
+.Help{
+    display: block;
+    float: right;
+    color: #ffff;
+}
+.footer-help{
+    color: white;
+    margin-left: 2em;
+    text-decoration: underline;
+    font-size: large;
+    margin-top: -2.5em;
+}
+.Help > ul li{
+    display: block;
+    text-decoration: none;
+    color: #ffff;
+    line-height: 2em;
 }
