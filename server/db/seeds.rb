@@ -1,0 +1,6 @@
+Doctor.create(name:"", location: "", license_number: )
+Doctor.create(name:"", location: "", license_number: )
+Doctor.create(name:"", location: "", license_number: )
+Doctor.create(name:"", location: "", license_number: )
+Doctor.create(name:"", location: "", license_number: )
+Doctor.create(name:"", location: "", license_number: )

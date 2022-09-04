@@ -36,7 +36,12 @@ const About = () => {
               </div>
               <div className="pets-imgs">
                 <img src={Image3} />
-                <a className="blog-links">Diseases Treated</a>
+                <a
+                  href="https://www.petmd.com/symptom-checker" target={"_blank"}
+                  className="blog-links"
+                 >
+                  Diseases Treated
+                </a>
               </div>
               <div className="pets-imgs">
                 <img src={Image4} />
@@ -54,7 +59,7 @@ const About = () => {
           </div>
         </div>
       </section>
-      <section className='section-two'>
+      <section className="section-two">
         <div className="abt-sec2">
           <img src={Image7} />
         </div>

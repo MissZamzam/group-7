@@ -12,7 +12,7 @@ const Home = () => {
       <div className="home-sec2">
         <div className="card1">
           <div>
-            {/* <FaDog className="center-icon" /> */}
+            <FaDog className="center-icon" />
             <FaDog className="icon-1" />
           </div>
 
