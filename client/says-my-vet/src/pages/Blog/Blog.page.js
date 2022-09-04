@@ -18,6 +18,9 @@ const BlogPage = () => {
 
     <div className='feed'>
       <h2>Dog Food</h2>
+      <a href="https://www.akc.org/expert-advice/nutrition/how-many-times-a-day-should-a-dog-eat/#:~:text=In%20general%2C%20dogs%20should%20be,kibble%20or%20wet%20canned%20food.">How Often Should Dogs Eat?</a>
+      <br></br>
+      
     </div>
 
   </div>
