@@ -1,58 +1,14 @@
-.registerDoctors{
-    background-color: #828282;
-    font-size: 30px;
-    margin:2em;
-    border-radius: 1em;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
 }
-.registerDoctors form > h2 {
-    margin:1em;
-    padding-top: 1em;
-    text-align: center;
-}
-
-
-.register_doctorsA{
-    margin:1em;
-    display:grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 200px;
-    gap: 1.5em;
-    line-height: 5em;
-    
-}
-.register_doctorsA > input{
-    height:2em;
-    width:14em;
-    background-color: #aaaaaa;
-    text-align: center;
-    border-radius:1em;
-}
-.register_doctorsA > label > select{
-    border:none;
-    background-color: #aaaaaa;
-    height:2em;
-    width:18rem;
-    margin-left: 1em;
-    border-radius: 2em;
-    text-align: center;
-}
-.register_doctorsA > label > input{
-    margin-left:1em;
-    background-color: #aaaaaa;
-    width:12em;
-    height: 2em;
-    border-radius:1em;
-}
-.submitBtn{
+body{
     display: flex;
+    height: 100hv;
     justify-content: center;
     align-items: center;
-}
-.registerbtn{
-    margin-left: 5em;
-    padding: 4px 60px;
-    margin-bottom: 1em;
-    font-size: large;
-    border-radius: 2em;
-    background-color: #00be51;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.923);
 }
