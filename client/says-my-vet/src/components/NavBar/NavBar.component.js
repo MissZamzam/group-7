@@ -46,10 +46,11 @@ const NavBar = () => {
         </div>
         <div className="routes">
           <ul>
-            <li> <Link to="/home"/>Home</li>
-            <li> <Link to="/about"/>About</li>
-            <li> <Link to="/registerdoc"/>Register_Doctors</li>
-            <li> <Link to="/viewdoc"/>View-Doctors</li>
+            <li> <Link to="/">Home</Link></li>
+            <li> <Link to="about">About</Link></li>
+            <li> <Link to="registerdoc">Register_Doctors</Link></li>
+            <li> <Link to="viewdoc">View-Doctors</Link></li>
+            <li> <Link to="petsdata">Pets Data</Link></li>
             {/* <li> <Link to="/home"/>Pets Data</li> */}
           </ul>
         </div>
