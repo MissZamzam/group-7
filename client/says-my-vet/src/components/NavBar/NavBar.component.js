@@ -50,6 +50,7 @@ const NavBar = () => {
             <li>Register_Doctors</li>
             <li>View-Doctors</li>
             <li>Pets Data</li>
+            <li>Blogs</li>
           </ul>
         </div>
       </div>
