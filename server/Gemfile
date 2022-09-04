@@ -10,6 +10,8 @@ gem "sqlite3"
 gem "require_all"
 gem "rspec"
 gem "sinatra"
+gem "sinatra-cors"
+gem "sinatra-cross_origin"
 
 # A fast and simple web server
 # https://github.com/macournoyer/thin
