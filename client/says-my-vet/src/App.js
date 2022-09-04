@@ -1,4 +1,4 @@
-
+import React from 'react';
 import NavBar from './components/NavBar/NavBar.component.js'
 import Footer from './components/Footer/Footer.component.js'
 // import pages 
