@@ -12,3 +12,28 @@ body{
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.923);
 }
+.container{
+    margin-top: 40px;
+    max-width: 1800px;
+    height: 950px;
+    width: 100%;
+    background-color: grey;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+.container .title{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+.container .title::before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 30px;
+}
+.container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
