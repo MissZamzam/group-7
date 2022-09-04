@@ -35,6 +35,11 @@ const BlogPage = () => {
       <br></br>
       <a href='https://www.puppyleaks.com/games/'>10 Fun Games to Play With Your Dog</a>
     </div>
+
+    <div className='welfare'>
+
+      
+    </div>
   </div>
   )
 }
