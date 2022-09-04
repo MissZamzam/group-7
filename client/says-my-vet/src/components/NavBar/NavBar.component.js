@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import './NavBar.styles.css'
+import { Link } from 'react-router-dom';
 import { FaEnvelope, FaFacebook, /*FaFacebookF,*/ FaInstagram, FaLinkedin, FaPhoneAlt, FaTwitter } from "react-icons/fa";
 
 const NavBar = () => {
@@ -15,22 +16,25 @@ const NavBar = () => {
         </div>
         <div className="media-handles">
           <ul>
-            <a>
+            <a href="https://twitter.com/outwardhound" target={"_blank"}>
               <li>
                 <FaTwitter />
               </li>
             </a>
-            <a>
+            <a href="https://www.instagram.com/outwardhound/" target={"_blank"}>
               <li>
                 <FaInstagram />
               </li>
             </a>
-            <a>
+            <a href="https://www.facebook.com/petsworldindia" target={"_blank"}>
               <li>
                 <FaFacebook />
               </li>
             </a>
-            <a>
+            <a
+              href="https://www.linkedin.com/company/outward-hound/?viewAsMember=true"
+              target={"_blank"}
+            >
               <li>
                 <FaLinkedin />
               </li>
@@ -46,6 +50,25 @@ const NavBar = () => {
         </div>
         <div className="routes">
           <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+            <li>
+              <Link to="/registerdoc">Register_Doctors</Link>
+            </li>
+            <li>
+              <Link to="/viewdoc">View-Doctors</Link>
+            </li>
+            <li>
+              <Link to="/petsdata">Pets Data</Link>
+            </li>
+            <li>
+              <Link to="/blog">Blogs</Link>
+            </li>
+
             <li> <Link to="/">Home</Link></li>
             <li> <Link to="about">About</Link></li>
             <li> <Link to="registerdoc">Register_Doctors</Link></li>
