@@ -51,7 +51,7 @@ const ViewDoctors = () => {
                         <div className="location">
                             <p>location</p>
                         </div>
-                        <div className="card-img"><img src={ image} alt="dog image" /></div>
+                        <div className="card-img"><img src={ image} alt="dog-image" /></div>
                         <hr />
                         <div className="card-text">
                             <p>Name:</p>

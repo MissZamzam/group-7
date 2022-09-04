@@ -1,7 +1,7 @@
 .main-container {
     display: flex;
     flex-direction: column;
-    /* background-color: green; */
+    background-color: #cbcaa5;
 }
 
 .filter {
@@ -34,11 +34,12 @@
     align-items: center;
     width: 85%;
     height: 60%;
-    background-color: #fff;
+    /* background-color: #fff; */
 }
 
 .card-img img {
-    /* height:; */
+    height: 100%;
+    border-radius: 5%;
     width: 100%;
     margin: auto;
 }
