@@ -1,4 +1,4 @@
 class Specialization < ActiveRecord::Base
-    has_many :pets
+    belongs_to :pet
     belongs_to :doctor
 end
