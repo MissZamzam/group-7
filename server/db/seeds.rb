@@ -7,8 +7,8 @@ daktari2 = Doctor.create(name:"Dr Okoth Onyango",location:"Nakuru",license_numbe
 
 puts "Seeding pets table ....."
 
-pet1 = Pet.create(name:"Lee",pet_type:"Dog",age:"3",color:"black",specialization:"Dentistry")
-pet2 = Pet.create(name:"Marley",pet_type:"Cat",age:"2",color:"brown",specialization:"Nutrition")
+pet1 = Pet.create(name:"Lee",pet_type:"Dog",age:"3",color:"black",specialization:"Dentistry",tag_number:111,pets_breed:"German Shepherd", phone_number:546876477)
+pet2 = Pet.create(name:"Marley",pet_type:"Cat",age:"2",color:"brown",specialization:"Nutrition",tag_number:112,pets_breed:"Ragdoll", phone_number:7563887)
 
 
 

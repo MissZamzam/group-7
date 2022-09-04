@@ -62,7 +62,10 @@ class ApplicationController < Sinatra::Base
           pet_type: params[:pet_type],
           age: params[:age],
           color: params[:color],
-          specialization: params[:specialization]
+          specialization: params[:specialization],
+          tag_number: params[:tag_number],
+          pets_breed: params[:pets_breed],
+          phone_number: params[:phone_number],
         )
         pet.to_json
       end
