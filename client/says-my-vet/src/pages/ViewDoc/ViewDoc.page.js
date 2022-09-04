@@ -1,8 +1,22 @@
 import React from 'react'
 import './ViewDoc.styles.css';
 import image from '../../assets/img/dog.jpg'
+import {useState, useEffect} from 'react'
 
 const ViewDoctors = () => {   
+    const url = 'http://localhost:9292/doctors'
+
+    const [doctors, setDoctors] = useState([]);
+
+    const getDocttorsData = async () => {
+        const response = await fetch(url)
+        const data = await response.json()
+        setDoctors(data)
+        console.log(doctors);
+    }
+    useEffect(() => {
+        getDocttorsData()
+    },[])
     return (
         <>
             
@@ -47,40 +61,26 @@ const ViewDoctors = () => {
                     </div>
           </div>      
                 <div className="main-cards">
-                    <div className="card-container">
+
+                    {
+                        doctors && doctors.map((doctor) => {
+                            return (
+                                <div className="card-container">
                         <div className="location">
-                            <p>location</p>
+                                        <p>location: { doctor.location}</p>
                         </div>
-                        <div className="card-img"><img src={ image} alt="dog-image" /></div>
+                        <div className="card-img"><img src={ doctor.picture_link} alt="dog-image" /></div>
                         <hr />
                         <div className="card-text">
-                            <p>Name:</p>
-                            <p>Phone_no:</p>
+                                        <p>Name: { doctor.name}</p>
+                                        <p>Phone_no: { doctor.phone_number}</p>
                         </div>
                 </div>
-                    <div className="card-container">
-                        <div className="location">
-                            <p>location</p>
-                        </div>
-                        <div className="card-img"><img src={ image} alt="dog image" /></div>
-                        <hr />
-                        <div className="card-text">
-                            <p>Name:</p>
-                            <p>Phone_no:</p>
-                        </div>
-                </div>
-                    <div className="card-container">
-                        <div className="location">
-                            <p>location</p>
-                        </div>
-                        <div className="card-img"><img src={ image} alt="dog image" /></div>
-                        <hr />
-                        <div className="card-text">
-                            <p>Name:</p>
-                            <p>Phone_no:</p>
-                        </div>
-                </div>
-                    <div className="card-container">
+                            )
+                        })
+                    }
+                    
+                    {/* <div className="card-container">
                         <div className="location">
                             <p>location</p>
                         </div>
@@ -90,7 +90,29 @@ const ViewDoctors = () => {
                             <p>Name:</p>
                             <p>Phone_no:</p>
                         </div>
-                </div>
+                </div> */}
+                    {/* <div className="card-container">
+                        <div className="location">
+                            <p>location</p>
+                        </div>
+                        <div className="card-img"><img src={ image} alt="dog image" /></div>
+                        <hr />
+                        <div className="card-text">
+                            <p>Name:</p>
+                            <p>Phone_no:</p>
+                        </div>
+                </div> */}
+                    {/* <div className="card-container">
+                        <div className="location">
+                            <p>location</p>
+                        </div>
+                        <div className="card-img"><img src={ image} alt="dog image" /></div>
+                        <hr />
+                        <div className="card-text">
+                            <p>Name:</p>
+                            <p>Phone_no:</p>
+                        </div>
+                </div> */}
                 </div>      
       </div>
       </>
