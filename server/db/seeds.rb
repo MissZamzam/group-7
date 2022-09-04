@@ -1,3 +1,4 @@
+
 puts "Seeding begin ......."
 
 puts "Seeding doctors table....."
@@ -18,3 +19,4 @@ spec2 = Specialization.create(field_of_speciality:"Nutrition",doctor_id: daktari
 spec3 = Specialization.create(field_of_speciality:"Dermatology",doctor_id: daktari2.id,pet_id: pet2.id )
 
 puts "Seeding end ....."
+
