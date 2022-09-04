@@ -16,6 +16,10 @@ const BlogPage = () => {
     <a href="https://www.petmd.com/symptom-checker">Pet Symptom Checker</a>
     </div>
 
+    <div className='feed'>
+      <h2>Dog Food</h2>
+    </div>
+
   </div>
   )
 }
