@@ -58,7 +58,11 @@ class ApplicationController < Sinatra::Base
 
       post '/pets' do
         pet = Pet.create(
-          name: params[:name]
+          name: params[:name],
+          pet_type: params[:pet_type],
+          age: params[:age],
+          color: params[:color],
+          specialization: params[:specialization]
         )
         pet.to_json
       end
