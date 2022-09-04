@@ -18,7 +18,7 @@ const Home = () => {
 
           <h4>Pet Walking</h4>
           <p>
-            Welcome to Pets Centre Veterinary Clinic web page. We are committed
+            Welcome to Pets First web page. We are committed
             to enhance your health by ensuring that you are always safe and have
             a happy companion (Pet).
           </p>
@@ -33,7 +33,7 @@ const Home = () => {
 
           <h4>Pet Daycare</h4>
           <p>
-            Welcome to Pets Centre Veterinary Clinic web page. We are committed
+            Welcome to Pets First web page. We are committed
             to enhance your health by ensuring that you are always safe and have
             a happy companion (Pet).
           </p>
@@ -47,7 +47,7 @@ const Home = () => {
           </div>
           <h4>Pet Grooming</h4>
           <p>
-            Welcome to Pets Centre Veterinary Clinic web page. We are committed
+            Welcome to Pets First web page. We are committed
             to enhance your health by ensuring that you are always safe and have
             a happy companion (Pet).
           </p>
