@@ -14,22 +14,25 @@ const NavBar = () => {
         </div>
         <div className="media-handles">
           <ul>
-            <a>
+            <a href="https://twitter.com/outwardhound" target={"_blank"}>
               <li>
                 <FaTwitter />
               </li>
             </a>
-            <a>
+            <a href="https://www.instagram.com/outwardhound/" target={"_blank"}>
               <li>
                 <FaInstagram />
               </li>
             </a>
-            <a>
+            <a href="https://www.facebook.com/petsworldindia" target={"_blank"}>
               <li>
                 <FaFacebook />
               </li>
             </a>
-            <a>
+            <a
+              href="https://www.linkedin.com/company/outward-hound/?viewAsMember=true"
+              target={"_blank"}
+            >
               <li>
                 <FaLinkedin />
               </li>

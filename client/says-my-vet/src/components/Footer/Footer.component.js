@@ -8,8 +8,8 @@ function Footer() {
     <footer className="footer-sec">
       <div className="footer">
         <div className="sections">
-          <div className='footer-image'>
-            <img src={footerImg}/>
+          <div className="footer-image">
+            <img src={footerImg} />
           </div>
           <div className="formpage">
             <div id="htwo" class="dark">
@@ -52,22 +52,31 @@ function Footer() {
               <h2>Let's Stay In Touch</h2>
             </div>
             <ul>
-              <a>
+              <a href="https://twitter.com/outwardhound" target={"_blank"}>
                 <li>
                   <FaTwitter />
                 </li>
               </a>
-              <a>
+              <a
+                href="https://www.instagram.com/outwardhound/"
+                target={"_blank"}
+              >
                 <li>
                   <FaInstagram />
                 </li>
               </a>
-              <a>
+              <a
+                href="https://www.facebook.com/petsworldindia"
+                target={"_blank"}
+              >
                 <li>
                   <FaFacebook />
                 </li>
               </a>
-              <a>
+              <a
+                href="https://www.linkedin.com/company/outward-hound/?viewAsMember=true"
+                target={"_blank"}
+              >
                 <li>
                   <FaLinkedin />
                 </li>
@@ -76,7 +85,7 @@ function Footer() {
           </div>
           <div>
             <div className="Help">
-              <div className='footer-help'>
+              <div className="footer-help">
                 <h2>Get Help</h2>
               </div>
               <ul>
