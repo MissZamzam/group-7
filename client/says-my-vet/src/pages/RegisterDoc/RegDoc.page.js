@@ -1,3 +1,4 @@
+import { Button } from 'bootstrap'
 import React from 'react'
 import "./RegDoc.styles.css"
 
@@ -51,9 +52,7 @@ const RegDoc = () => {
                         <option value="6">6 and more</option>
                     </select>
                     </div>
-                    <div class="button" id="btn">
-                        <input type="submit" value="Register" />
-                    </div>
+                    <button className="button">Register</button>
         </div>
         <form action="#"></form>
     </div>
