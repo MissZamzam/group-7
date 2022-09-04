@@ -52,7 +52,9 @@ const RegDoc = () => {
     </select>
     </label>
     </div>
-    <input type="submit" className="registerbtn"/>                      
+    <div className='submitBtn'>
+    <input type="submit" className="registerbtn"/>    
+    </div>                  
       </div>
   </form>        
 </div>

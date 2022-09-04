@@ -43,6 +43,11 @@
     height: 2em;
     border-radius:1em;
 }
+.submitBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .registerbtn{
     margin-left: 5em;
     padding: 4px 60px;
