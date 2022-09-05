@@ -1,10 +1,13 @@
-//import { Button } from 'bootstrap'
+
+//import { Button } from 'bootst
+
 import React from 'react'
 import "./RegDoc.styles.css"
 
 const RegDoc = () => {
   return (
     <div class="container">
+        <form action="#">
         <h2 class="title">Register with Us</h2>
         <div class="user-details">
         <div class="input-box">
@@ -54,7 +57,7 @@ const RegDoc = () => {
                     </div>
                     <button className="button">Register</button>
         </div>
-        <form action="#"></form>
+        </form>
     </div>
 
   )

@@ -1,4 +1,7 @@
 import React from 'react'
+import "./Blog.styles.css"
+
+
 
 const BlogPage = () => {
   return (
@@ -7,7 +10,7 @@ const BlogPage = () => {
 
     <div className='dog_disease'>
       <h2>Diseases</h2>
-      <a href="https://pets.webmd.com/dogs/conditions">Dog Health Conditions A to Z</a>
+      <a className='anchor' href="https://pets.webmd.com/dogs/conditions">Dog Health Conditions A to Z</a>
       <br></br>
       <a href="https://www.avma.org/resources-tools/pet-owners/petcare/disease-risks-dogs-social-settings">Disease risks for dogs in social settings</a>
       <br></br>
@@ -37,6 +40,13 @@ const BlogPage = () => {
     </div>
 
     <div className='welfare'>
+    <h2>Training</h2>
+      <a href='https://www.masterclass.com/articles/dog-training-guide?campaignid=17955457183&adgroupid=140031464379&adid=614946886970&utm_term=&utm_campaign=%5BMC%5C+%7C+Search+%7C+NonBrand+%7C+SEO-Pages_DSA+%7C+ROW+%7C+EN+%7C+tROAS+%7C+EG%7CPP+%7C+BRD+%7C+ROW&utm_source=google&utm_medium=cpc&utm_content=614946886970&hsa_acc=9801000675&hsa_cam=17955457183&hsa_grp=140031464379&hsa_ad=614946886970&hsa_src=s&hsa_tgt=dsa-1720758020155&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gclid=EAIaIQobChMIqdL-_uz6-QIVxMPVCh0yBAH4EAAYASAAEgI6wfD_BwE'>Basic Dog Training Tips</a>
+      <br></br>
+      <a href='https://www.akc.org/expert-advice/training/teach-your-puppy-these-5-basic-commands/'>Teach Your Puppy These 5 Basic Cues</a>
+      <br></br>
+      <a href='https://www.puppyleaks.com/games/'>10 Fun Games to Play With Your Dog</a>
+    
 
       
     </div>

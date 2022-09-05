@@ -1,6 +1,6 @@
 import React from 'react'
 import '../Footer/Footer.styles.css'
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaArrowUp } from "react-icons/fa";
 import footerImg from "./images/doctor3.jpg";
 
 function Footer() {
@@ -98,6 +98,10 @@ function Footer() {
           </div>
         </div>
       </div>
+      <div class="foot">
+        <hr></hr>
+     <h5>Designed by @group-7 members <br/> copyright reserved <br/><a href="/" class="up"><FaArrowUp/></a></h5>
+    </div>
     </footer>
   );
 }
