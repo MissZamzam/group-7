@@ -151,3 +151,128 @@
     left: 6em;
     color: #00be51;
 }
+
+/* MEDIA QUERIES*/
+/*for small devices*/
+/* @media screen and (max-width: 280px) {
+   .home-page{
+       width: 70%;
+       height: 100%;
+       font-size: 8px;
+   }
+       
+} */
+ /* for tablet devices
+@media screen and (max-width:280px){
+    .home-page{
+        font-size: 10px;
+    }
+        
+        .navbar ul{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .mainImg{
+            width: 350px;
+            height: 200px;
+        }
+
+        .heading{
+            font-size: 3em;
+        }
+        .secondimage{
+            flex-direction: column;
+            align-items: center;
+        }
+        .secondimage img{
+            width: 475px;
+            height: 380px;
+        }
+        .intro h2{
+            text-align: center;
+            padding: 1em;
+        }
+        .input{
+            width: 60px;
+        }
+        #msg{
+            width: 55px;
+        }
+        .submit{
+            width: 20%;
+        }
+        
+        
+    } */
+    /* @media screen and (max-width:412px){
+        .portfolio, .heading{
+        font-size: 1.5em;
+    }
+     .gallery img{
+            width: 250px;
+            height: 150px;
+            margin: .8em;
+        }
+
+    .services{
+        grid-template-columns: max-content;
+        justify-content: center;
+        font-size: 16px;
+    }
+    .box h2{
+        font-size: 1em;
+    }
+    }
+    @media screen and (max-width:768px){
+       .navbar{
+        align-items: center;
+        font-size: 15px;
+        overflow: auto;
+    }
+        
+        .navbar ul{
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+            overflow: auto;
+            color: white;
+            gap: 0;
+        }
+        .mainImg{
+            width: 400px;
+            height: 300px;
+        }
+
+        .heading{
+            font-size: 3em;
+        }
+        .secondimage{
+            flex-direction: column;
+            align-items: center;
+        }
+        .secondimage img{
+            width: 475px;
+            height: 380px;
+        }
+        .intro h2{
+            text-align: center;
+            padding: 1em;
+        }
+        .gallery img{
+             width: 280px;
+            height: 150px;
+            margin: .8em;
+        }
+        .box h2{
+        font-size: 1em;
+        }
+        .input{
+            width: 60px;
+        }
+        #msg{
+            width: 55px;
+        }
+        .submit{
+            width: 20%;
+        }
+    } */
