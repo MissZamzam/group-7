@@ -1,28 +1,18 @@
-import React, { useMemo } from 'react'
+import React from 'react'
 import './ViewDoc.styles.css';
+import useFetch from '../../custom-hooks/useFetch';
 // import image from '../../assets/img/dog.jpg'
-import {useState, useEffect} from 'react'
+// import {useState, useEffect} from 'react'
 const ViewDoctors = () => {   
     
-    const [doctors, setDoctors] = useState([]);
+// state was here 
+    const { data: doctors, loading } = useFetch('http://localhost:9292/doctors')
     
     const handleLocationChange = (e) => {
         console.log(e.target.value)
         
     }
-    const url = 'http://localhost:9292/doctors'
-    
-  
-
-    const getDocttorsData = async () => {
-        const response = await fetch(url)
-        const data = await response.json()
-        setDoctors(data)
-        console.log(doctors);
-    }
-    useEffect(() => {
-        getDocttorsData()
-    },[])
+//  useEffect was here
     return (
         <>
             
@@ -66,8 +56,8 @@ const ViewDoctors = () => {
           </div>      
                 <div className="main-cards">
  
-                    {
-                        doctors && doctors.map((doctor) => {
+            
+                      {doctors && doctors.map((doctor) => {
                             return (
                                 <div className="card-container">
                         <div className="location">
