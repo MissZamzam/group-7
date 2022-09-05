@@ -89,8 +89,8 @@ border: 1px solid #ccc;
 padding: 15px;
 font-size: 16px;
 }
-/* 
-@media (max-width: 800px){
+
+@media (max-width: 1024px){
     .container{
         max-width: 100%;
     }
@@ -100,4 +100,15 @@ font-size: 16px;
     .container form .user-details{
         max-height: 1200px;
     }
-} */
+}
+@media (min-width: 768px){
+    .container{
+        min-width: 100%;
+    }
+    form .user-details .input-box{
+        width: 100%
+    }
+    .container form .user-details{
+        min-height: 1200px;
+    }
+}
