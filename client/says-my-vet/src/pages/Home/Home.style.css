@@ -1,14 +1,9 @@
-/* *{
-    /* margin: 0;
-    padding: 0; */
-    /* box-sizing: border-box; */
-    
-/*} */
+
 /*HOME PAGE STYILING*/
 .home-page{
     display: block;
     background-color: #b8adad;
-    height: 100%;
+    height: 100vh;
 }
 .home-sec1{
     display: block;
@@ -32,12 +27,13 @@
     /* margin-top: 2em; */
 }
 .home-sec2{
-    height: 60vh;
+    height: 50vh;
     width:100%;
     background-color: #b8adad;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 200px;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    /* grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200px; */
     gap: 2rem;
     position: relative;
     /* overflow: auto; */
@@ -46,13 +42,14 @@
     z-index: 3;
     top:30rem; */
 }
+/*CARDS*/
 .card1{
     background-color: #00be51;
     text-align: center;
     height: 75%;
     width: 15%;
     margin: 0 1em ;
-    font-size: 15px;
+    font-size: 12px;
     position: absolute;
     left: 15rem;
     /* z-index: 3; */
@@ -61,16 +58,13 @@
     /* border: 2px solid #ffff; */
     border-radius: 1em;
 }
-/*CARDS*/
-
-
 .card2{
     background-color: rgb(235, 218, 218);
     text-align: center;
     height: 75%;
     width: 15%;
     margin: 0 1em 1em 0 ;
-    font-size: 15px;
+    font-size: 12px;
     position: absolute;
     left: 40rem;
     /* z-index: 2; */
@@ -86,7 +80,7 @@
     height: 75%;
     width: 15%;
     margin: 0 1em 1em 0 ;
-    font-size: 15px;
+    font-size: 12px;
     position: absolute;
     left: 60rem;
     /* z-index: 1; */

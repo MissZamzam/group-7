@@ -16,14 +16,15 @@ const Home = () =>
     <div className="home-page">
       <div className="home-sec1">
         <h3 id="descr">High Quality Care For Pets You'll Love</h3>
-        <Link to = '/about'>
+        <Link to="/about">
           <button className="info-btn">LEARN MORE</button>
         </Link>
       </div>
       <div className="home-sec2">
+        {/* <div className='cards'></div> */}
         <div className="card1">
           <div>
-            <FaDog className="center-icon" />
+            {/* <FaDog className="center-icon" /> */}
             <FaDog className="icon-1" />
           </div>
 

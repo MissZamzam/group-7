@@ -15,7 +15,7 @@ const About = () => {
         <div className="abt-sec1">
           <div className="about-us">
             <h1>About Us</h1>
-            <p>
+            <p className='abt-paragraph'>
               While a pet is generally kept for the pleasure that it can give to
               its owner, often, especially with horses, dogs, and cats, as well
               as with some other domesticated animals, this pleasure appears to
