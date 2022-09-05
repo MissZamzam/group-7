@@ -1,11 +1,11 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import './NavBar.styles.css'
-import { Link } from 'react-router-dom';
 import { FaEnvelope, FaFacebook, /*FaFacebookF,*/ FaInstagram, FaLinkedin, FaPhoneAlt, FaTwitter } from "react-icons/fa";
 
 const NavBar = () => {
   return (
-    <header className="header-sec">
+   <header className="header-sec">
       <div className="media-contacts">
         <div className="phonecall">
           <FaPhoneAlt />: +2547200000
