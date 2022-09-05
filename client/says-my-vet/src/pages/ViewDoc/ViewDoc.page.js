@@ -1,12 +1,11 @@
 import React,{ useState} from 'react'
 import './ViewDoc.styles.css';
 import useFetch from '../../custom-hooks/useFetch';
-// import { useState } from 'react';
-// import image from '../../assets/img/dog.jpg'
-// import {useState, useEffect} from 'react'
+import  {Link} from 'react-router-dom'
+
 const ViewDoctors = () => {   
     
-// state was here 
+// state was here before refactoring to accomodate a custom hook useFetch
     const { data: doctors, loading, error } = useFetch('http://localhost:9292/doctors')
     const [location, setLocation] = useState("All")
     const [experience, setExperience] = useState("All Doctors")
@@ -111,9 +110,12 @@ const ViewDoctors = () => {
                         </div>
                         <div className="card-img"><img src={ doctor.picture_link} alt={doctor.name} /></div>
                         <hr />
-                        <div className="card-text">
+                                    <div className="card-text">
+                                        <Link to={`/doctors/${doctor.id}` }>
                                         <p>Name: { doctor.name}</p>
                                         <p>Phone_no: { doctor.phone_number}</p>
+
+                                        </Link>
                         </div>
                 </div>
                             )
