@@ -1,17 +1,44 @@
-import React from 'react'
+import React,{ useState} from 'react'
 import './ViewDoc.styles.css';
 import useFetch from '../../custom-hooks/useFetch';
+// import { useState } from 'react';
 // import image from '../../assets/img/dog.jpg'
 // import {useState, useEffect} from 'react'
 const ViewDoctors = () => {   
     
 // state was here 
-    const { data: doctors, loading } = useFetch('http://localhost:9292/doctors')
+    const { data: doctors, loading, error } = useFetch('http://localhost:9292/doctors')
+    const [location, setLocation] = useState("All")
+    const [experience, setExperience] = useState("All Doctors")
+    const [specialization, setSpecialization] = useState("All")
+
     
-    const handleLocationChange = (e) => {
-        console.log(e.target.value)
-        
+    const handleExperienceChange = (e) => {
+        setExperience(e.target.value)
     }
+    function handleLocationChange(e)
+    {
+        setLocation(e.target.value)
+    }
+    function handleSpecializationChange(e)
+    {
+        setSpecialization(e.target.value)
+    }
+    const filteredDoctors = doctors.filter((daktari) => {
+        if (location === "All" || location === daktari.location) {
+            return true
+        }
+    }
+    ).filter((daktari) => {
+        if (experience === "All Doctors" || experience === daktari.experience) {
+            return true
+        }
+    }).filter((daktari) => {
+        if (specialization === "All" || specialization === daktari.specialization) {
+            return true
+        }
+    })
+    console.log(filteredDoctors)
 //  useEffect was here
     return (
         <>
@@ -24,10 +51,15 @@ const ViewDoctors = () => {
                     {/* filter by location */}
               <label htmlFor="location">Location:</label>
 
-                        <select name="location" id="location">
-                            {doctors.map(doctor => (
+                        <select name="location" id="location" onChange={handleLocationChange}>
+                            {/* {doctors.map(doctor => (
                                 <option value="location-2">{ <p>{doctor.location}</p> }</option>
-                           ))}
+                           ))} */}
+                            <option value="All">All</option>
+                            <option value="Nairobi">Nairobi</option>
+                            <option value="Mombasa">Mombasa</option>
+                            <option value="Nakuru">Nakuru</option>
+                            <option value="Kisumu">Kisumu</option>
                          </select>
             
                     </div>
@@ -35,10 +67,17 @@ const ViewDoctors = () => {
                         
                     {/* filter by years of experience */}
               <label htmlFor="experience">Experience:</label>
-                        <select name="experience" id="experience">
-                             {doctors.map(doctor => (
+                        <select name="experience" id="experience" onChange={handleExperienceChange}>
+                            <option value="All">All</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6 and more">6 and more</option>
+                             {/* {doctors.map(doctor => (
                                 <option value="experience">{ <p>{doctor.years_of_experience}</p> }</option>
-                           ))}
+                           ))} */}
        
                 </select>
                     </div>
@@ -46,18 +85,25 @@ const ViewDoctors = () => {
 
                     {/* filter by specialization */}
               <label htmlFor="specialization">Specialization:</label>
-                        <select name="location" id="location" onChange={handleLocationChange}>
-                              {doctors.map(doctor => (
+                        <select name="location" id="location" onChange={handleSpecializationChange}>
+                              {/* {doctors.map(doctor => (
                                 <option value="experience">{ <p>{doctor.specialization}</p> }</option>
-                           ))}
+                           ))} */}
+                            <option value="All Doctors">All Doctors</option>
+                            <option value="Dentistry">Dentistry</option>
+                            <option value="Dermatology">Dermatology</option>
+                            <option value="Nutrition">Nutrition</option>
+                            <option value="Theriogenology">Theriogenology</option>
+                             <option value="Ophtalmology">Ophtalmology</option>
                
                 </select>
                     </div>
           </div>      
-                <div className="main-cards">
- 
-            
-                      {doctors && doctors.map((doctor) => {
+                {error ? <p>{error}</p> : 
+                    
+                      <div className="main-cards">
+                           {loading ? <p>Loading...</p> : null}
+                      {filteredDoctors.map((doctor) => {
                             return (
                                 <div className="card-container">
                         <div className="location">
@@ -76,6 +122,8 @@ const ViewDoctors = () => {
                     
                    
                 </div>      
+             }
+              
       </div>
       </>
   )
