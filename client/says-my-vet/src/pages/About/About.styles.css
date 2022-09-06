@@ -46,18 +46,18 @@
     border-radius: 20px;
 }
 
-.abt-paragraph{
+p{
     font-family:Arial, Helvetica, sans-serif;
-    column-gap: .5em;
+    /* column-gap: .5em;
     column-count: 3;
-    row-gap: .5em;
+    row-gap: .5em; */
     text-align: center; 
 }
 .pets-imgs{
-    height: 100%;
+    height: 90%;
     width: 100%;
     /* background-color: aqua; */
-    margin: 1em;
+    margin: .5em;
     display: block;
     text-align: center;
 }
