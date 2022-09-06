@@ -1,3 +1,9 @@
+
+
+//import { Button } from 'bootst
+
+import React from 'react'
+import "./RegDoc.styles.css"
 import React, { useState } from 'react'
 
 
