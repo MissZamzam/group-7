@@ -143,28 +143,28 @@
     border-radius: 50%;
 }
 .icon-4{
-    margin-top: 2.3em;
+    margin-top: 6.5em;
     position: absolute;
     /* height: 30px;
     width: 40px; */
-    left: 6em;
-    color: #ffff;
+    left: 8em;
+    color: #808080;
 }
 .icon-5{
-    margin-top: 2.3em;
+     margin-top: 6.5em;
     position: absolute;
     /* height: 30px;
     width: 40px; */
-    left: 6em;
-    color: #00be51;
+    left: 8em;
+    color: #808080;
 }
 .icon-6{
-    margin-top: 2.3em;
+    margin-top: 6.5em;
     position: absolute;
     /* height: 30px;
     width: 40px; */
-    left: 6em;
-    color: #00be51;
+    left: 8em;
+    color: #808080;
 }
 
 /* MEDIA QUERIES*/
