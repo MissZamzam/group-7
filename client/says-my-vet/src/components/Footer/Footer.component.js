@@ -1,9 +1,30 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../Footer/Footer.styles.css'
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaArrowUp } from "react-icons/fa";
 import footerImg from "./images/doctor3.jpg";
 
-function Footer() {
+function Footer ()
+{
+  const [ formData, setFormData ] = useState( {} )
+  const [addCommentData, setAddCommentData] = useState(null)
+  function handleChange ( event )
+  {
+    // setAddCommentData( {
+    //   ...addCommentData, [ event.target.name ]: event.target.value,
+    
+    // } );
+  
+    const name = event.target.name;
+    setFormData({...FormData, [name]: name,})
+  }
+  function handleSubmit ( event )
+  {
+    event.preventDefault();
+    // console.log( formData );
+    setAddCommentData( {
+      ...addCommentData, name:"",
+    })
+  }
   return (
     <footer className="footer-sec">
       <div className="footer">
@@ -21,27 +42,37 @@ function Footer() {
                   type="text"
                   id="name"
                   name=""
-                  value=""
+                  value={formData.name}
                   placeholder="Name"
                   required
+                  // onChange={handleChange}
                 />
                 <input
                   type="tel"
                   id="number"
                   name=""
-                  value=""
+                  value={formData.number}
                   placeholder="Phone"
+                  // onChange={handleChange}
                 />
                 <input
                   type="Email"
                   id="email"
                   name=""
-                  value=""
+                  value={formData.email}
                   placeholder="E-mail"
                   required
+                  // onChange={handleChange}
                 />
-                <textarea type="text" id="text" name="" value=" Type here..." />
-                <button type="Submit" id="submit">
+                <textarea
+                  type="text"
+                  id="text"
+                  name=""
+                  placeholder=" Type here..."
+                  value={formData.text}
+                  // onChange={handleChange}
+                />
+                <button type="Submit" id="submit" >
                   Submit
                 </button>
               </form>
@@ -100,10 +131,15 @@ function Footer() {
       </div>
       <div class="foot">
         <hr></hr>
-     <h5>Designed by @group-7 members <br/> copyright reserved <br/><a href="/" class="up"><FaArrowUp/></a></h5>
-    </div>
+        <h5>
+          Designed by @group-7 members <br /> copyright reserved <br />
+          <a href="/" class="up">
+            <FaArrowUp />
+          </a>
+        </h5>
+      </div>
     </footer>
   );
 }
 
-export default Footer
+  export default Footer;
