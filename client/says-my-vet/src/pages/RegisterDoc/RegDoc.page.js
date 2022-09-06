@@ -1,6 +1,8 @@
 
 
+
 //import { Button } from 'bootst
+
 
 import React from 'react'
 import "./RegDoc.styles.css"
