@@ -1,7 +1,40 @@
+
 import React from 'react'
 import "./RegDoc.styles.css"
+import { useState } from 'react'
 
 const RegDoc = () => {
+  // state for controlled input fields
+  const [name, setName] = useState('')
+  const [location, setLocation] = useState('Nairobi')
+  const [license_number, setLicenceNumber] = useState(11111111)
+  const [specialization, setSpecialization] = useState('Dentistry')
+  const [phone_number, setPhone_number] = useState(17955457183)
+  const [picture_link, setpicture_link] = useState('fygggfff')
+  const [years_of_experience, setYears_of_experience] = useState(2)
+  const [toasty, setToasty] = useState(null)
+  
+
+  // const history = useNavigate()
+// handle form submission
+  
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    const doctor = {name, license_number, location, specialization, phone_number, picture_link, years_of_experience}
+    console.log(doctor)
+    // notify()
+    // make post request
+    fetch('http://localhost:9292/doctors', {
+      method: 'POST',
+      headers: { "Content-Type": 'application/json' },
+      body: JSON.stringify(doctor)
+  
+    }).then(() => {
+      console.log("New doctor added successfuly");
+    })
+    // history.push('/')
+  }
+
   return (
     <div class="container">
         <form action="#">
