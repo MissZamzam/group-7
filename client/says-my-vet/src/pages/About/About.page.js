@@ -15,16 +15,27 @@ const About = () => {
         <div className="abt-sec1">
           <div className="about-us">
             <h1>About Us</h1>
-            <p>
+            <p className="abt-paragraph">
               While a pet is generally kept for the pleasure that it can give to
               its owner, often, especially with horses, dogs, and cats, as well
               as with some other domesticated animals, this pleasure appears to
               be mutual. Thus, pet keeping can be described as a symbiotic
               relationship, one that benefits both animals and human beings.{" "}
             </p>
+            <br></br>
           </div>
           <div className="services">
             <h3>Our Services</h3>
+            <p>
+              Pets First is a web application that helps to connect pets owners
+              to veterinary doctors in their location.It has a features where
+              doctors register with their contacts and location so that pets
+              owners and can contact them directly It also has beneficial extra
+              information for the pets owners ranging from dog breeds,common
+              diseases that affect dogs,various dog feeds,dog training and so on
+            </p>
+            <h3 className="resource">More Resources For Your Pet</h3>
+            
             <div className="service-blogs">
               <div className="pets-imgs">
                 <img src={Image1} />
@@ -51,7 +62,7 @@ const About = () => {
                   target={"_blank"}
                   className="blog-links"
                 >
-                  Diseases Treated
+                  Diseases/Health
                 </a>
               </div>
               <div className="pets-imgs">
@@ -91,7 +102,6 @@ const About = () => {
         </div>
       </section>
     </div>
-
   );
 }
 
