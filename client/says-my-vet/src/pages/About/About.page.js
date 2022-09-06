@@ -28,39 +28,71 @@ const About = () => {
             <div className="service-blogs">
               <div className="pets-imgs">
                 <img src={Image1} />
-                <a className="blog-links">Pets Breeds</a>
+                <a
+                  href="https://www.dog-breeds-expert.com/Dog-Breeds-A-To-Z.html"
+                  className="blog-links"
+                >
+                  Pets Breeds
+                </a>
               </div>
               <div className="pets-imgs">
                 <img src={Image2} />
-                <a className="blog-links">Pets Feeds</a>
+                <a
+                  href="https://www.petsworld.in/blog/pet-food"
+                  className="blog-links"
+                >
+                  Pets Feeds
+                </a>
               </div>
               <div className="pets-imgs">
                 <img src={Image3} />
-                <a className="blog-links">Diseases Treated</a>
+                <a
+                  href="https://www.avma.org/resources-tools/pet-owners/petcare/disease-risks-dogs-social-settings"
+                  target={"_blank"}
+                  className="blog-links"
+                >
+                  Diseases Treated
+                </a>
               </div>
               <div className="pets-imgs">
                 <img src={Image4} />
-                <a className="blog-links">Pets Welfare</a>
+                <a
+                  href="https://outwardhound.com/furtropolis/pet-parenting/do-you-need-help-with-your-dog"
+                  className="blog-links"
+                >
+                  Pets Welfare
+                </a>
               </div>
               <div className="pets-imgs">
                 <img src={Image5} />
-                <a className="blog-links">FunFacts About Pets</a>
+                <a
+                  href="https://outwardhound.com/furtropolis/category/dogs"
+                  className="blog-links"
+                >
+                  FunFacts About Pets
+                </a>
               </div>
               <div className="pets-imgs">
                 <img src={Image6} />
-                <a className="blog-links">Pets Sporting Activities</a>
+                <a
+                  href="https://www.puppyleaks.com/games/"
+                  className="blog-links"
+                >
+                  Pets Sporting Activities
+                </a>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section className='section-two'>
+      <section className="section-two">
         <div className="abt-sec2">
           <img src={Image7} />
         </div>
       </section>
     </div>
+
   );
 }
 
-export default About
+  export default About

@@ -27,7 +27,8 @@
     text-align: center;
     border-radius:1em;
 }
-.register_doctorsA > label > select{
+
+.register_petsA > label > select{
     border:none;
     background-color: #aaaaaa;
     height:2em;
@@ -36,15 +37,21 @@
     border-radius: 2em;
     text-align: center;
 }
-.register_doctorsA > label > input{
+.register_petsA > label > input{
     margin-left:1em;
     background-color: #aaaaaa;
     width:12em;
     height: 2em;
     border-radius:1em;
 }
+.submit-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
 .registerbtn{
-    margin-left: 5em;
+    /* margin-left: 10rem; */
     padding: 4px 60px;
     margin-bottom: 1em;
     font-size: large;

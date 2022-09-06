@@ -97,7 +97,9 @@ const PetsData = () => {
               </select>
             </label>
           </div>
-          <input type="submit" className="registerbtn" />
+          <div className='submit-btn'>
+            <input type="submit" className="registerbtn" />
+          </div>
         </div>
       </form>
     </div>
