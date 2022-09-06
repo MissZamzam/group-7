@@ -6,8 +6,9 @@ const PetsData = () => {
     <div className="registerPets">
       <form className="myForm">
         <h2>Register Your Pets Here</h2>
+
         <div className="register_pets">
-          <div className="register_petsA">
+          <div className="details">
             <label>
               Name:
               <input
@@ -17,6 +18,10 @@ const PetsData = () => {
                 name="name"
               />
             </label>
+            </div>
+
+
+            <div className='details'>
             <label>
               Tag_number:
               <input
@@ -27,10 +32,13 @@ const PetsData = () => {
               />
             </label>
           </div>
-          <div className="register_petsA">
+
+
+
+          <div className='details'>
             <label id="location">
               Pet_type:
-              <select name="location">
+              <select name="location" className='field'>
                 <option value="Dogs">Dogs</option>
                 <option value="Cats">Cats</option>
                 <option value="Fish">Fish</option>
@@ -38,9 +46,12 @@ const PetsData = () => {
                 <option value="Birds">Birds</option>
               </select>
             </label>
+            </div>
+            
+            <div className='details'>
             <label id="specialization">
               Pet_Breeds:
-              <select name="service_specialized" id="specialize_id">
+              <select name="service_specialized" id="specialize_id" className='field'>
                 <option value="German Shepherd">German Shepherd</option>
                 <option value="">Rex Rabbit</option>
                 <option value="Ragdoll">Ragdoll</option>
@@ -54,7 +65,10 @@ const PetsData = () => {
               </select>
             </label>
           </div>
-          <div className="register_petsA">
+
+
+
+          <div className='details'>
             <label>
               Phone Number:
               <input
@@ -64,6 +78,10 @@ const PetsData = () => {
                 placeholder="phone_number"
               />
             </label>
+            </div>
+
+
+            <div className='details'>
             <label>
               Pet_color:
               <input
@@ -74,10 +92,14 @@ const PetsData = () => {
               />
             </label>
           </div>
-          <div className="register_petsA">
+
+
+
+          <div className='details'>
             <label>
-              Life_span
-              <select name="life-span">
+              Life_span:
+              </label>
+              <select name="life-span" className='details'>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -85,21 +107,25 @@ const PetsData = () => {
                 <option value="5">5</option>
                 <option value="6">6 and more</option>
               </select>
-            </label>
+            </div>
+
+            <div className='details'>
             <label id="specialization">
               Specialization:
-              <select name="service_specialized" id="specialize_id">
+              </label>
+
+              <select name="service_specialized" id="specialize_id" className='details'>
                 <option value="Dentistry">Dentistry</option>
                 <option value="Dermatology">Dermatology</option>
                 <option value="Eskimo Dog">Nutrition</option>
                 <option value="Ragdoll">Theriogenology</option>
                 <option value="Opthalmology">Ophtalmology</option>
               </select>
-            </label>
           </div>
-          <div className='submit-btn'>
+
+
+
             <input type="submit" className="registerbtn" />
-          </div>
         </div>
       </form>
     </div>
