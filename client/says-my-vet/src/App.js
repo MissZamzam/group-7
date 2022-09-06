@@ -9,9 +9,9 @@ import Blog from './pages/Blog/Blog.page.js';
 import RegisterDoc from './pages/RegisterDoc/RegDoc.page.js';
 import ViewDoc from './pages/ViewDoc/ViewDoc.page.js';
 import PetsData from './pages/PetsData/PetsData.page.js';
+import DoctorDetails from './pages/ViewDoc/DoctorDetails/DoctorDetails.js';
 // absolute imports
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-
 
 function App() {
   return (
@@ -25,6 +25,7 @@ function App() {
             <Route path='/registerdoc' element={<RegisterDoc/>}/>
           <Route path='/viewdoc' element={ <ViewDoc /> } />
           <Route path ='/petsdata' element = {<PetsData/>}/>
+          <Route path ='/doctors/:id' element = {<DoctorDetails/>}/>
       {/* <h1>Says my vet</h1> */}
       </Routes>
       <Footer/>

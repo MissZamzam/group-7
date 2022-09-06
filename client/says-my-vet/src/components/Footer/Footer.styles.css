@@ -5,11 +5,29 @@
     margin-top: 2em;
     height: 60vh;
     /* gap: 20em;  */
+    
+    
+} 
+.footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
-} 
+
+}
+.foot{
+    background-color: rgb(14, 13, 13);
+}
+.foot hr{
+    width: 95%;
+    margin: 0 1em;
+    height: auto;
+    color: grey;
+}
+.foot h5{
+    font-size: 12px;
+    color: white;
+    text-align: center;
+}
 .sections{
     display: flex;
     gap: 3em;
