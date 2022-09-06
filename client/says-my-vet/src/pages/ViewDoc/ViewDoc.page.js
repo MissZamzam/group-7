@@ -113,6 +113,7 @@ const ViewDoctors = () => {
                                     <div className="card-text">
                                         <Link to={`/doctors/${doctor.id}` }>
                                         <p>Name: { doctor.name}</p>
+                                        <p>Specialization: { doctor.specialization}</p>
                                         <p>Phone_no: { doctor.phone_number}</p>
 
                                         </Link>

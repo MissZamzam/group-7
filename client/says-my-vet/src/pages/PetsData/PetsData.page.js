@@ -1,6 +1,14 @@
-import React from "react";
+// import { setSelectionRange } from "@testing-library/user-event/dist/utils";
+import React,{useState} from "react";
 import "../PetsData/PetsData.styles.css";
 const PetsData = () => {
+  // state
+  const [name, setName] =useState('')
+  const [tagNumber, setTagNumber] = useState(0)
+  const [petType, setPetType] = useState('Dogs')
+  const [petBreed, setPetBreed] =useState('German Shepherd')
+  const [phoneNumber, setPhoneNumber] =useState('')
+
   return (
     <div className="registerPets">
       <form className="myForm">
@@ -13,7 +21,8 @@ const PetsData = () => {
                 type="text"
                 className="field"
                 placeholder="name"
-                name="name"
+                value={ name}
+                onChange={(e) => {setName(e.target.value)}}
               />
             </label>
           </div>
@@ -24,14 +33,15 @@ const PetsData = () => {
                 type="text"
                 className="field"
                 placeholder="tag_number"
-                name="age"
+                value={tagNumber}
+                onChange={(e)=> {setTagNumber(e.target.value)}}
               />
             </label>
           </div>
           <div className="details">
             <label id="location">
               Pet_type:
-              <select name="location" className="field">
+              <select value={petType} className="field" onChange={(e)=>{setPetType(e.target.value) }}>
                 <option value="Dogs">Dogs</option>
                 <option value="Cats">Cats</option>
                 <option value="Fish">Fish</option>
@@ -44,9 +54,10 @@ const PetsData = () => {
             <label id="specialization">
               Pet_Breeds:
               <select
-                name="service_specialized"
+                value={petBreed}
                 id="specialize_id"
                 className="field"
+                onChange={(e)=> {setPetBreed(e.target.value)}}
               >
                 <option value="German Shepherd">German Shepherd</option>
                 <option value="">Rex Rabbit</option>
@@ -66,9 +77,10 @@ const PetsData = () => {
               Phone Number:
               <input
                 type="text"
-                name="phone_number"
+                value={phoneNumber}
                 className="field"
                 placeholder="phone_number"
+                onChange={(e)=> {setPhoneNumber(e.target.value)}}
               />
             </label>
           </div>
@@ -110,6 +122,7 @@ const PetsData = () => {
           </div>
           <input type="submit" className="registerbtn" />
         </div>
+        {/* <button type="submit" onChange={handleSubmit}>Submit</button> */}
       </form>
     </div>
   );
