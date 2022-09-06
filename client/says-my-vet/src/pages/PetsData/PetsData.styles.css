@@ -1,60 +1,69 @@
-.registerPets{
-    background-color: #828282;
-    font-size: 30px;
-    margin:2em;
-    border-radius: 1em;
-}
-.registerPets form > h2 {
-    margin:1em;
-    padding-top: 1em;
-    text-align: center;
-}
-
-
-.register_petsA{
-    margin:1em;
-    display:grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 200px;
-    gap: 1.5em;
-    line-height: 5em;
-    
-}
-.register_petsA > input{
-    height:2em;
-    width:14em;
-    background-color: #aaaaaa;
-    text-align: center;
-    border-radius:1em;
-}
-
-.register_petsA > label > select{
-    border:none;
-    background-color: #aaaaaa;
-    height:2em;
-    width:18rem;
-    margin-left: 1em;
-    border-radius: 2em;
-    text-align: center;
-}
-.register_petsA > label > input{
-    margin-left:1em;
-    background-color: #aaaaaa;
-    width:12em;
-    height: 2em;
-    border-radius:1em;
-}
-.submit-btn{
+body{
     display: flex;
+    height: 100hv;
     justify-content: center;
     align-items: center;
-    
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.923);
+}
+.registerPets{
+    margin-top: 40px;
+    /* max-width: 1500px; */
+    height: 950px;
+    width: 96vw;
+    background-color: grey;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+h2{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+.registerPets form .register_pets{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+form .register_pets .details{
+    margin-bottom: 15px;
+    margin: 20px 0 12px 0;
+    grid-template-columns: repeat(2);
+    width: calc(100%/2 - 60px);
+}
+.register_pets .details label{
+    display: block;
+    font-weight: 500;
+    margin: 10px;
+}
+.register_pets .details input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    font-size: 16px;
+}
+.register_pets .details select{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    font-size: 16px;
 }
 .registerbtn{
-    /* margin-left: 10rem; */
-    padding: 4px 60px;
-    margin-bottom: 1em;
-    font-size: large;
-    border-radius: 2em;
-    background-color: #00be51;
+    color: white;
+    background-color: green;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 100px;
+    border: none;
+    font-size: 20;
+    height: 45px;
+    width: 100%;
 }
