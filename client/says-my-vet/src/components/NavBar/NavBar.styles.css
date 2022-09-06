@@ -43,8 +43,13 @@
     margin-left: 225px;
     width: 97.5%;
     background-color:#00be51 ;
+<<<<<<< HEAD
     height: 40%;
     margin-top: 1em;
+=======
+    height: 5%;
+    margin-top: -1em;
+>>>>>>> 21f7904 (Nav styling green color)
 }
 
 .header-sec{
